@@ -101,7 +101,7 @@ public class InvokeService {
             }
         }
 
-        System.out.println("有效数据为" + exportList.size() + "条");
+        System.out.println(fileNameList.toString() + "有效数据为" + exportList.size() + "条");
         try {
             ExportUtil.exportExcel(exportList, "API日志分析", baseFilePath, ApiStatisticsForLogExport.class, "API日志分析.xls", response);
         } catch (Exception e) {
